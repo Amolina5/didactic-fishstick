@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}UFC - Ultimate Fighting Championship{% endblock title %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="container">
+    <h1 class="display-4 fw-bold">ULTIMATE FIGHTING CHAMPIONSHIP</h1>
+    <p class="lead">The world's premier mixed martial arts organization</p>
+    <a href="#" class="btn btn-danger btn-lg mt-3">View Upcoming Events</a>
+  </div>
+</div>
+
+<!-- Upcoming Events Section -->
+<div class="upcoming-events">
+  <h2 class="text-center mb-4">Upcoming Events</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title">UFC 300</h5>
+          <h6 class="card-subtitle mb-2 text-muted">April 13, 2024</h6>
+          <p class="card-text">T-Mobile Arena, Las Vegas, NV</p>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="text-end me-2">
+              <strong>Alex Pereira</strong>
+              <div>25-2-0</div>
+            </div>
+            <div class="mx-2">VS</div>
+            <div class="text-start ms-2">
+              <strong>Jamahal Hill</strong>
+              <div>12-1-0</div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-sm btn-outline-dark">View Fight Card</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title">UFC Fight Night</h5>
+          <h6 class="card-subtitle mb-2 text-muted">April 27, 2024</h6>
+          <p class="card-text">UFC APEX, Las Vegas, NV</p>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="text-end me-2">
+              <strong>Kang In-ho</strong>
+              <div>10-2-0</div>
+            </div>
+            <div class="mx-2">VS</div>
+            <div class="text-start ms-2">
+              <strong>Brady Hiestand</strong>
+              <div>11-2-0</div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-sm btn-outline-dark">View Fight Card</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title">UFC 301</h5>
+          <h6 class="card-subtitle mb-2 text-muted">May 4, 2024</h6>
+          <p class="card-text">Jeunesse Arena, Rio de Janeiro, Brazil</p>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="text-end me-2">
+              <strong>Alexandre Pantoja</strong>
+              <div>26-5-0</div>
+            </div>
+            <div class="mx-2">VS</div>
+            <div class="text-start ms-2">
+              <strong>Steve Erceg</strong>
+              <div>12-1-0</div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-sm btn-outline-dark">View Fight Card</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Champions Section -->
+<div class="champions-section mb-5">
+  <h2 class="text-center mb-4">Current UFC Champions</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card">
+        <img src="{% static 'https://th.bing.com/th/id/OIP.N_0F0RBva3swBhqcqB2jjQHaEK?w=312&h=180&c=7&r=0&o=5&pid=1.7' %}" class="card-img-top" alt="Jon Jones">
+        <div class="card-body text-center">
+          <h5 class="card-title">Jon Jones</h5>
+          <p class="card-text text-muted">Heavyweight</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card">
+        <img src="{% static 'https://tse2.mm.bing.net/th?id=OIP.hlwEkkBHobbXRiGbTNeYHgHaFj&pid=Api&P=0&h=180' %}" class="card-img-top" alt="Alex Pereira">
+        <div class="card-body text-center">
+          <h5 class="card-title">Alex Pereira</h5>
+          <p class="card-text text-muted">Light Heavyweight</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card">
+        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Dricus Du Plessis">
+        <div class="card-body text-center">
+          <h5 class="card-title">Dricus Du Plessis</h5>
+          <p class="card-text text-muted">Middleweight</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card">
+        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Leon Edwards">
+        <div class="card-body text-center">
+          <h5 class="card-title">Leon Edwards</h5>
+          <p class="card-text text-muted">Welterweight</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="latest-news mb-5">
+  <h2 class="text-center mb-4">Latest UFC News</h2>
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <div class="news-item">
+        <h4>Jon Jones vs Stipe Miocic Rescheduled for Summer 2024</h4>
+        <p class="news-date">March 1, 2024</p>
+        <p>The highly anticipated heavyweight title bout between Jon Jones and Stipe Miocic has been rescheduled for summer 2024 after Jones recovered from his injury.</p>
+        <a href="#" class="btn btn-sm btn-outline-dark">Read More</a>
+      </div>
+      <div class="news-item">
+        <h4>UFC Announces Return to Dublin for September Event</h4>
+        <p class="news-date">February 25, 2024</p>
+        <p>The UFC has announced its return to Dublin, Ireland for a Fight Night event in September 2024, marking the promotion's first visit to the country since 2015.</p>
+        <a href="#" class="btn btn-sm btn-outline-dark">Read More</a>
+      </div>
+      <div class="news-item">
+        <h4>Islam Makhachev to Defend Lightweight Title Against Arman Tsarukyan</h4>
+        <p class="news-date">February 20, 2024</p>
+        <p>UFC Lightweight Champion Islam Makhachev is set to defend his title against top contender Arman Tsarukyan at an upcoming pay-per-view event.</p>
+        <a href="#" class="btn btn-sm btn-outline-dark">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <a href="#" class="btn btn-danger">View All News</a>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<div class="bg-dark text-white p-5 text-center rounded">
+  <h2>Join UFC Fight Pass</h2>
+  <p class="lead">Get unlimited access to the world's largest MMA fight library, exclusive shows, and live events.</p>
+  <a href="#" class="btn btn-danger btn-lg mt-3">Start Your Free Trial</a>
+</div>
+{% endblock content %}

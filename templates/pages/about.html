@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About UFC - Ultimate Fighting Championship{% endblock title %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="container">
+    <h1 class="display-4 fw-bold">ABOUT THE UFC</h1>
+    <p class="lead">The world's premier mixed martial arts organization since 1993</p>
+  </div>
+</div>
+
+<!-- Our Story Section -->
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <h2 class="text-center mb-4">Our Story</h2>
+      <p>The Ultimate Fighting Championship (UFC) is the world's premier mixed martial arts organization and the largest Pay-Per-View event provider in the world. UFC follows a rich history and tradition of competitive MMA dating back to the Olympic Games in Athens. About 2,000 years ago, the Greeks introduced the combat sport of Pankration, a fierce competition combining the striking skills of boxing with the grappling techniques of wrestling.</p>
+      
+      <p>The UFC was founded in 1993 as a professional mixed martial arts organization that has revolutionized the fight business. With more than 700 million fans worldwide, UFC has produced over 500 events in 28 countries since its inception. UFC boasts the highest-level fighters on the planet and has popularized the sport globally through its powerful brand, world-class events, and unmatched programming.</p>
+      
+      <p>In 2016, UFC was acquired by global sports, entertainment, and fashion leader Endeavor, along with strategic investors Silver Lake Partners and KKR, in what is widely recognized as one of the largest acquisitions in sports history.</p>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <img src="{% static 'images/placeholder.jpg' %}" class="img-fluid rounded" alt="UFC Event">
+    </div>
+    <div class="col-md-6">
+      <h3>The Evolution of UFC</h3>
+      <p>When the UFC began in 1993, it was designed as a single-night tournament to determine the most effective martial art for unarmed combat situations. It featured minimal rules and fighters competing in different disciplines. Since then, the UFC has embraced numerous rule changes to create a more controlled and safer environment for its athletes while maintaining the integrity of competition.</p>
+      
+      <p>Today, the UFC sets the gold standard for MMA events worldwide with a comprehensive set of unified rules and rigorous health and safety standards. The organization continues to evolve, constantly improving the sport and expanding its global footprint.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Mission & Values Section -->
+<div class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Mission & Values</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h4 class="card-title">Excellence</h4>
+            <p class="card-text">We strive to showcase the highest level of martial arts skill and athletic performance in every event. Our commitment to excellence extends from our fighters to our production quality and fan experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h4 class="card-title">Integrity</h4>
+            <p class="card-text">We uphold the highest standards of sportsmanship and fair play. Our commitment to strict drug testing, transparent rankings, and consistent rule enforcement ensures the legitimacy of our sport.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h4 class="card-title">Innovation</h4>
+            <p class="card-text">We continuously push boundaries to improve the sport, athlete safety, and viewer experience. From production technology to training methodologies, we embrace innovation at every level.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Leadership Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">UFC Leadership</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Dana White">
+        <div class="card-body text-center">
+          <h5 class="card-title">Dana White</h5>
+          <p class="card-text text-muted">UFC President</p>
+          <p>Dana White has been the driving force behind the UFC's rise to global prominence since 2001. His vision and leadership have transformed the UFC into a multi-billion dollar enterprise and one of the fastest-growing sports organizations in the world.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Lawrence Epstein">
+        <div class="card-body text-center">
+          <h5 class="card-title">Lawrence Epstein</h5>
+          <p class="card-text text-muted">Chief Operating Officer</p>
+          <p>Lawrence Epstein oversees the company's global business operations and corporate strategy. He has been instrumental in the UFC's international expansion and development of corporate partnerships.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Hunter Campbell">
+        <div class="card-body text-center">
+          <h5 class="card-title">Hunter Campbell</h5>
+          <p class="card-text text-muted">Chief Business Officer</p>
+          <p>Hunter Campbell manages fighter relations and contract negotiations, ensuring that the UFC continues to showcase the world's most talented mixed martial artists across all weight divisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- UFC by the Numbers -->
+<div class="bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">UFC By The Numbers</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-4">
+        <h3 class="display-4 fw-bold">700M+</h3>
+        <p>Fans Worldwide</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h3 class="display-4 fw-bold">175+</h3>
+        <p>Countries Where UFC is Broadcast</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h3 class="display-4 fw-bold">500+</h3>
+        <p>Events Since 1993</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h3 class="display-4 fw-bold">28</h3>
+        <p>Countries Hosted UFC Events</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- UFC Performance Institute -->
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <h2 class="text-center mb-4">UFC Performance Institute</h2>
+      <p>The UFC Performance Institute represents the world's first mixed martial arts multi-disciplinary research, innovation, and performance center. With locations in Las Vegas and Shanghai, these state-of-the-art facilities provide UFC athletes with unparalleled training, recovery, nutrition, and performance services.</p>
+      
+      <p>The Performance Institute employs an expert staff of sports scientists, nutritionists, and strength and conditioning coaches who work directly with athletes to maximize their potential and optimize their overall health and wellness. This investment in athlete development demonstrates the UFC's commitment to the advancement of MMA as a professional sport.</p>
+      
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-danger">Learn More About the PI</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Community Initiatives -->
+<div class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Community & Social Responsibility</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">UFC Foundation</h4>
+            <p class="card-text">The UFC Foundation supports charitable initiatives in the communities where we live and work. We focus on youth development, education, and public health initiatives, providing support to disadvantaged communities around the world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Veteran Outreach</h4>
+            <p class="card-text">The UFC is proud to support military veterans through employment opportunities, event access, and dedicated programs. Our partnership with military organizations helps veterans transition to civilian life and provides therapeutic outlets through martial arts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<div class="bg-dark text-white p-5 text-center rounded">
+  <h2>Join the UFC Community</h2>
+  <p class="lead">Get exclusive content, event updates, and connect with UFC fans around the world.</p>
+  <a href="#" class="btn btn-danger btn-lg mt-3">Sign Up Now</a>
+</div>
+{% endblock content %}
