@@ -4,162 +4,321 @@
 {% block title %}UFC - Ultimate Fighting Championship{% endblock title %}
 
 {% block content %}
-<!-- Hero Section -->
+<!-- Hero Section with Enhanced Styling -->
 <div class="hero-section">
   <div class="container">
-    <h1 class="display-4 fw-bold">ULTIMATE FIGHTING CHAMPIONSHIP</h1>
+    <h1 class="display-4 fw-bold knockout-text">ULTIMATE FIGHTING CHAMPIONSHIP</h1>
     <p class="lead">The world's premier mixed martial arts organization</p>
-    <a href="#" class="btn btn-danger btn-lg mt-3">View Upcoming Events</a>
+    <div class="hero-cta">
+      <a href="#upcoming-events" class="btn btn-danger btn-lg mt-3">View Upcoming Events</a>
+    </div>
   </div>
 </div>
 
-<!-- Upcoming Events Section -->
-<div class="upcoming-events">
-  <h2 class="text-center mb-4">Upcoming Events</h2>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="card-body text-center">
-          <h5 class="card-title">UFC 300</h5>
-          <h6 class="card-subtitle mb-2 text-muted">April 13, 2024</h6>
-          <p class="card-text">T-Mobile Arena, Las Vegas, NV</p>
-          <div class="d-flex justify-content-center align-items-center mb-3">
-            <div class="text-end me-2">
-              <strong>Alex Pereira</strong>
-              <div>25-2-0</div>
+<!-- Upcoming Events Section with Enhanced Cards -->
+<div class="upcoming-events py-5" id="upcoming-events">
+  <div class="container">
+    <h2 class="text-center mb-4 section-title">Upcoming Events</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">UFC 300</h5>
+            <h6 class="card-subtitle mb-2 text-muted">April 13, 2024</h6>
+            <p class="card-text">T-Mobile Arena, Las Vegas, NV</p>
+            <div class="octagon-border mb-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="text-end me-2">
+                  <strong>Alex Pereira</strong>
+                  <div class="fight-record"><span class="record-win">25</span>-<span class="record-loss">2</span>-<span class="record-draw">0</span></div>
+                </div>
+                <div class="mx-2 fw-bold">VS</div>
+                <div class="text-start ms-2">
+                  <strong>Jamahal Hill</strong>
+                  <div class="fight-record"><span class="record-win">12</span>-<span class="record-loss">1</span>-<span class="record-draw">0</span></div>
+                </div>
+              </div>
             </div>
-            <div class="mx-2">VS</div>
-            <div class="text-start ms-2">
-              <strong>Jamahal Hill</strong>
-              <div>12-1-0</div>
+            <a href="#" class="btn btn-sm btn-danger">View Fight Card</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">UFC Fight Night</h5>
+            <h6 class="card-subtitle mb-2 text-muted">April 27, 2024</h6>
+            <p class="card-text">UFC APEX, Las Vegas, NV</p>
+            <div class="octagon-border mb-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="text-end me-2">
+                  <strong>Kang In-ho</strong>
+                  <div class="fight-record"><span class="record-win">10</span>-<span class="record-loss">2</span>-<span class="record-draw">0</span></div>
+                </div>
+                <div class="mx-2 fw-bold">VS</div>
+                <div class="text-start ms-2">
+                  <strong>Brady Hiestand</strong>
+                  <div class="fight-record"><span class="record-win">11</span>-<span class="record-loss">2</span>-<span class="record-draw">0</span></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-sm btn-danger">View Fight Card</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">UFC 301</h5>
+            <h6 class="card-subtitle mb-2 text-muted">May 4, 2024</h6>
+            <p class="card-text">Jeunesse Arena, Rio de Janeiro, Brazil</p>
+            <div class="octagon-border mb-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="text-end me-2">
+                  <strong>Alexandre Pantoja</strong>
+                  <div class="fight-record"><span class="record-win">26</span>-<span class="record-loss">5</span>-<span class="record-draw">0</span></div>
+                </div>
+                <div class="mx-2 fw-bold">VS</div>
+                <div class="text-start ms-2">
+                  <strong>Steve Erceg</strong>
+                  <div class="fight-record"><span class="record-win">12</span>-<span class="record-loss">1</span>-<span class="record-draw">0</span></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-sm btn-danger">View Fight Card</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Countdown Timer for Next PPV -->
+  <div class="container mt-5">
+    <div class="text-center">
+      <h3>Next Pay-Per-View Event</h3>
+      <div class="countdown-timer mt-4">
+        <div class="countdown-item">
+          <div class="countdown-number">32</div>
+          <div class="countdown-label">days</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number">18</div>
+          <div class="countdown-label">hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number">42</div>
+          <div class="countdown-label">mins</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number">05</div>
+          <div class="countdown-label">secs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Champions Section with Enhanced Cards -->
+<div class="champions-section py-5 mb-5">
+  <div class="container">
+    <h2 class="text-center mb-4 section-title">Current UFC Champions</h2>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4 fighter-item">
+        <div class="card animate-fighter">
+          <img src="{% static 'img/jon_jones.jpg' %}" class="card-img-top" alt="Jon Jones">
+          <div class="card-body text-center">
+            <h5 class="card-title">Jon Jones</h5>
+            <p class="card-text text-muted">Heavyweight</p>
+            <span class="weight-class">265 lbs</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 fighter-item">
+        <div class="card animate-fighter">
+          <img src="{% static 'img/alex_pereira.jpg' %}" class="card-img-top" alt="Alex Pereira">
+          <div class="card-body text-center">
+            <h5 class="card-title">Alex Pereira</h5>
+            <p class="card-text text-muted">Light Heavyweight</p>
+            <span class="weight-class">205 lbs</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 fighter-item">
+        <div class="card animate-fighter">
+          <img src="{% static 'img/dricus_du_plessis.jpg' %}" class="card-img-top" alt="Dricus Du Plessis">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dricus Du Plessis</h5>
+            <p class="card-text text-muted">Middleweight</p>
+            <span class="weight-class">185 lbs</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 fighter-item">
+        <div class="card animate-fighter">
+          <img src="{% static 'img/leon_edwards.jpg' %}" class="card-img-top" alt="Leon Edwards">
+          <div class="card-body text-center">
+            <h5 class="card-title">Leon Edwards</h5>
+            <p class="card-text text-muted">Welterweight</p>
+            <span class="weight-class">170 lbs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Latest News Section with Enhanced Styling -->
+<div class="latest-news py-5 mb-5 radiant-bg">
+  <div class="container">
+    <h2 class="text-center mb-4 section-title">Latest UFC News</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="news-item">
+          <h4>Jon Jones vs Stipe Miocic Rescheduled for Summer 2024</h4>
+          <p class="news-date">March 1, 2024</p>
+          <p>The highly anticipated heavyweight title bout between Jon Jones and Stipe Miocic has been rescheduled for summer 2024 after Jones recovered from his injury.</p>
+          <a href="#" class="btn btn-sm btn-danger">Read More</a>
+        </div>
+        <div class="news-item">
+          <h4>UFC Announces Return to Dublin for September Event</h4>
+          <p class="news-date">February 25, 2024</p>
+          <p>The UFC has announced its return to Dublin, Ireland for a Fight Night event in September 2024, marking the promotion's first visit to the country since 2015.</p>
+          <a href="#" class="btn btn-sm btn-danger">Read More</a>
+        </div>
+        <div class="news-item">
+          <h4>Islam Makhachev to Defend Lightweight Title Against Arman Tsarukyan</h4>
+          <p class="news-date">February 20, 2024</p>
+          <p>UFC Lightweight Champion Islam Makhachev is set to defend his title against top contender Arman Tsarukyan at an upcoming pay-per-view event.</p>
+          <a href="#" class="btn btn-sm btn-danger">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="#" class="btn btn-danger impact-flash">View All News</a>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Fighter Profile -->
+<div class="container my-5">
+  <h2 class="text-center mb-4 section-title">Featured Fighter</h2>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="fighter-card">
+        <div class="fighter-card-header">
+          <h3 class="m-0">Alex Pereira</h3>
+          <small>Light Heavyweight Champion</small>
+        </div>
+        <div class="fighter-card-body">
+          <p>"Poatan" is a former GLORY Kickboxing Middleweight and Light Heavyweight Champion who has successfully transitioned to MMA, capturing UFC gold in two divisions.</p>
+          
+          <div class="fighter-stats">
+            <div>
+              <strong>25-2</strong>
+              <span>Record</span>
+            </div>
+            <div>
+              <strong>21</strong>
+              <span>KO/TKO</span>
+            </div>
+            <div>
+              <strong>84%</strong>
+              <span>Finish Rate</span>
             </div>
           </div>
-          <a href="#" class="btn btn-sm btn-outline-dark">View Fight Card</a>
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="card-body text-center">
-          <h5 class="card-title">UFC Fight Night</h5>
-          <h6 class="card-subtitle mb-2 text-muted">April 27, 2024</h6>
-          <p class="card-text">UFC APEX, Las Vegas, NV</p>
-          <div class="d-flex justify-content-center align-items-center mb-3">
-            <div class="text-end me-2">
-              <strong>Kang In-ho</strong>
-              <div>10-2-0</div>
-            </div>
-            <div class="mx-2">VS</div>
-            <div class="text-start ms-2">
-              <strong>Brady Hiestand</strong>
-              <div>11-2-0</div>
-            </div>
-          </div>
-          <a href="#" class="btn btn-sm btn-outline-dark">View Fight Card</a>
+    <div class="col-md-6">
+      <h4>Championship Journey</h4>
+      
+      <!-- Progress Timeline -->
+      <div class="mb-4">
+        <div class="heat-stat-label">
+          <span>UFC Debut (2021)</span>
+        </div>
+        <div class="heat-stat">
+          <div class="heat-stat-fill" style="width: 20%"></div>
+        </div>
+        
+        <div class="heat-stat-label">
+          <span>Middleweight Title Win (2022)</span>
+        </div>
+        <div class="heat-stat">
+          <div class="heat-stat-fill" style="width: 50%"></div>
+        </div>
+        
+        <div class="heat-stat-label">
+          <span>Light Heavyweight Move (2023)</span>
+        </div>
+        <div class="heat-stat">
+          <div class="heat-stat-fill" style="width: 75%"></div>
+        </div>
+        
+        <div class="heat-stat-label">
+          <span>Current Champion Status (2024)</span>
+        </div>
+        <div class="heat-stat">
+          <div class="heat-stat-fill" style="width: 100%"></div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="card-body text-center">
-          <h5 class="card-title">UFC 301</h5>
-          <h6 class="card-subtitle mb-2 text-muted">May 4, 2024</h6>
-          <p class="card-text">Jeunesse Arena, Rio de Janeiro, Brazil</p>
-          <div class="d-flex justify-content-center align-items-center mb-3">
-            <div class="text-end me-2">
-              <strong>Alexandre Pantoja</strong>
-              <div>26-5-0</div>
-            </div>
-            <div class="mx-2">VS</div>
-            <div class="text-start ms-2">
-              <strong>Steve Erceg</strong>
-              <div>12-1-0</div>
-            </div>
-          </div>
-          <a href="#" class="btn btn-sm btn-outline-dark">View Fight Card</a>
-        </div>
-      </div>
+      
+      <p class="mb-4">From kickboxing champion to two-division UFC titleholder, Alex Pereira has made one of the most impressive combat sports transitions in history.</p>
+      
+      <a href="#" class="btn btn-danger punch-effect">Fighter Profile</a>
     </div>
   </div>
 </div>
 
-<!-- Champions Section -->
-<div class="champions-section mb-5">
-  <h2 class="text-center mb-4">Current UFC Champions</h2>
-  <div class="row">
-    <div class="col-md-3 col-sm-6 mb-4">
-      <div class="card">
-        <img src="{% static 'https://th.bing.com/th/id/OIP.N_0F0RBva3swBhqcqB2jjQHaEK?w=312&h=180&c=7&r=0&o=5&pid=1.7' %}" class="card-img-top" alt="Jon Jones">
-        <div class="card-body text-center">
-          <h5 class="card-title">Jon Jones</h5>
-          <p class="card-text text-muted">Heavyweight</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 mb-4">
-      <div class="card">
-        <img src="{% static 'https://tse2.mm.bing.net/th?id=OIP.hlwEkkBHobbXRiGbTNeYHgHaFj&pid=Api&P=0&h=180' %}" class="card-img-top" alt="Alex Pereira">
-        <div class="card-body text-center">
-          <h5 class="card-title">Alex Pereira</h5>
-          <p class="card-text text-muted">Light Heavyweight</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 mb-4">
-      <div class="card">
-        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Dricus Du Plessis">
-        <div class="card-body text-center">
-          <h5 class="card-title">Dricus Du Plessis</h5>
-          <p class="card-text text-muted">Middleweight</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 mb-4">
-      <div class="card">
-        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Leon Edwards">
-        <div class="card-body text-center">
-          <h5 class="card-title">Leon Edwards</h5>
-          <p class="card-text text-muted">Welterweight</p>
-        </div>
-      </div>
+<!-- Weight Classes Section -->
+<div class="champions-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 section-title">UFC Weight Classes</h2>
+    <div class="text-center mb-4">
+      <span class="weight-class">Heavyweight: 265 lbs</span>
+      <span class="weight-class">Light Heavyweight: 205 lbs</span>
+      <span class="weight-class">Middleweight: 185 lbs</span>
+      <span class="weight-class">Welterweight: 170 lbs</span>
+      <span class="weight-class">Lightweight: 155 lbs</span>
+      <span class="weight-class">Featherweight: 145 lbs</span>
+      <span class="weight-class">Bantamweight: 135 lbs</span>
+      <span class="weight-class">Flyweight: 125 lbs</span>
+      <span class="weight-class">W-Featherweight: 145 lbs</span>
+      <span class="weight-class">W-Bantamweight: 135 lbs</span>
+      <span class="weight-class">W-Flyweight: 125 lbs</span>
+      <span class="weight-class">W-Strawweight: 115 lbs</span>
     </div>
   </div>
 </div>
 
-
-<div class="latest-news mb-5">
-  <h2 class="text-center mb-4">Latest UFC News</h2>
-  <div class="row">
-    <div class="col-lg-8 mx-auto">
-      <div class="news-item">
-        <h4>Jon Jones vs Stipe Miocic Rescheduled for Summer 2024</h4>
-        <p class="news-date">March 1, 2024</p>
-        <p>The highly anticipated heavyweight title bout between Jon Jones and Stipe Miocic has been rescheduled for summer 2024 after Jones recovered from his injury.</p>
-        <a href="#" class="btn btn-sm btn-outline-dark">Read More</a>
+<!-- Call to Action with Enhanced Styling -->
+<div class="cta-section text-white p-5 text-center">
+  <div class="container">
+    <h2 class="knockout-text">Join UFC Fight Pass</h2>
+    <p class="lead">Get unlimited access to the world's largest MMA fight library, exclusive shows, and live events.</p>
+    <a href="#" class="btn btn-danger btn-lg mt-3">Start Your Free Trial</a>
+    
+    <!-- Quick Stats -->
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="impact-flash">
+          <h3 class="text-white">30,000+</h3>
+          <p>Hours of Content</p>
+        </div>
       </div>
-      <div class="news-item">
-        <h4>UFC Announces Return to Dublin for September Event</h4>
-        <p class="news-date">February 25, 2024</p>
-        <p>The UFC has announced its return to Dublin, Ireland for a Fight Night event in September 2024, marking the promotion's first visit to the country since 2015.</p>
-        <a href="#" class="btn btn-sm btn-outline-dark">Read More</a>
+      <div class="col-md-4">
+        <div class="impact-flash">
+          <h3 class="text-white">200+</h3>
+          <p>Live Events Per Year</p>
+        </div>
       </div>
-      <div class="news-item">
-        <h4>Islam Makhachev to Defend Lightweight Title Against Arman Tsarukyan</h4>
-        <p class="news-date">February 20, 2024</p>
-        <p>UFC Lightweight Champion Islam Makhachev is set to defend his title against top contender Arman Tsarukyan at an upcoming pay-per-view event.</p>
-        <a href="#" class="btn btn-sm btn-outline-dark">Read More</a>
+      <div class="col-md-4">
+        <div class="impact-flash">
+          <h3 class="text-white">$9.99</h3>
+          <p>Monthly Subscription</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="text-center mt-4">
-    <a href="#" class="btn btn-danger">View All News</a>
-  </div>
-</div>
-
-<!-- Call to Action -->
-<div class="bg-dark text-white p-5 text-center rounded">
-  <h2>Join UFC Fight Pass</h2>
-  <p class="lead">Get unlimited access to the world's largest MMA fight library, exclusive shows, and live events.</p>
-  <a href="#" class="btn btn-danger btn-lg mt-3">Start Your Free Trial</a>
 </div>
 {% endblock content %}

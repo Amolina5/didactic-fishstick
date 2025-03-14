@@ -1,0 +1,232 @@
+/* Global color variables */
+:root {
+    --ufc-red: #d20a0a;
+    --ufc-black: #1a1a1a;
+    --ufc-dark-gray: #333333;
+    --ufc-light-gray: #f0f0f0;
+    --ufc-gold: #d4af37;
+    --ufc-blue: #0a57d2;
+  }
+  
+  /* Override Bootstrap container */
+  .container {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-top: 3px solid var(--ufc-red);
+    border-bottom: 3px solid var(--ufc-gold);
+  }
+  
+  /* Override Bootstrap navbar */
+  .navbar {
+    background: linear-gradient(to right, var(--ufc-black), var(--ufc-red), var(--ufc-gold)) !important;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    position: relative;
+    color: white;
+  }
+  
+  /* Add subtle texture overlay */
+  .navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  
+  /* Ensure text visibility with enhanced contrast */
+  .navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    position: relative;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5px;
+  }
+  
+  /* Add gold glow on hover for better visibility */
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--ufc-gold) !important;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+  }
+  
+  /* Change the underline effect to gold for better contrast */
+  .navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--ufc-gold);
+    bottom: 5px;
+    left: 15px;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover::after,
+  .navbar-dark .navbar-nav .nav-link.active::after {
+    width: calc(100% - 30px);
+  }
+  
+  /* Brand styling */
+  .navbar-brand {
+    font-weight: 800;
+    color: white !important;
+    text-shadow: 0 1px 3px rgba(240, 237, 237, 0.8);
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Active nav item styling */
+  .navbar-dark .navbar-nav .nav-item.active .nav-link {
+    position: relative;
+    background: rgb(228, 211, 211);
+    border-radius: 4px;
+  }
+  
+  /* Add a gold border to navbar */
+  .navbar {
+    border-bottom: 2px solid var(--ufc-gold);
+  }
+  
+  /* Override Bootstrap buttons */
+  .btn-primary {
+    background-color: var(--ufc-red) !important;
+    border-color: var(--ufc-red) !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #a5080a !important;
+    border-color: #a5080a !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(210, 10, 10, 0.4);
+  }
+  
+  /* Override Bootstrap alerts */
+  .alert {
+    border-left: 4px solid transparent;
+  }
+  
+  .alert-success {
+    border-left-color: #28a745;
+  }
+  
+  .alert-danger {
+    border-left-color: var(--ufc-red);
+  }
+  
+  /* Override Bootstrap footer */
+  .footer {
+    background-color: var(--ufc-black) !important;
+    color: white !important;
+    position: relative;
+  }
+  
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ufc-red), var(--ufc-gold), var(--ufc-red));
+  }
+  
+  /* Override headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /* Add this to custom-overrides.css */
+body {
+    background: linear-gradient(135deg, var(--ufc-black) 0%, #000000 40%, var(--ufc-red) 60%, var(--ufc-black) 80%, var(--ufc-gold) 100%);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    animation: gradientBackgroundFlow 15s ease infinite;
+  }
+  
+  /* Gradient background flow animation */
+  @keyframes gradientBackgroundFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Section title styling */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ufc-red) 0%, var(--ufc-gold) 100%);
+    animation: titleBarGrow 1.5s ease-out forwards;
+  }
+  
+  @keyframes titleBarGrow {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+
+  /* Disable Bootstrap card styles */
+.card {
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+  
+  /* Disable Bootstrap rounding */
+  .rounded, .rounded-circle, .rounded-pill {
+    border-radius: 0 !important;
+  }
+  .announcement {
+    background-color: #000000; /* Black background */
+    color: #D4AF37; /* Gold text */
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 2px solid #DC0000; /* Red border top */
+    border-bottom: 2px solid #DC0000; /* Red border bottom */
+}
+
+.marquee {
+    display: inline-block;
+    animation: marquee 40s linear infinite;
+}
+
+.marquee span {
+    font-weight: bold;
+    padding: 80px;
+    text-shadow: 1px 1px 3px rgba(220, 0, 0, 0.5); /* Subtle red text shadow */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgb(3, 3, 3) !important;
+}

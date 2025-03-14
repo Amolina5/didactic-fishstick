@@ -4,19 +4,22 @@
 {% block title %}About UFC - Ultimate Fighting Championship{% endblock title %}
 
 {% block content %}
-<!-- Hero Section -->
+<!-- Hero Section with Enhanced Styling -->
 <div class="hero-section">
   <div class="container">
-    <h1 class="display-4 fw-bold">ABOUT THE UFC</h1>
+    <h1 class="display-4 fw-bold knockout-text">ABOUT THE UFC</h1>
     <p class="lead">The world's premier mixed martial arts organization since 1993</p>
+    <div class="hero-cta">
+      <a href="#our-story" class="btn btn-danger btn-lg mt-3">Our Story</a>
+    </div>
   </div>
 </div>
 
 <!-- Our Story Section -->
-<div class="container my-5">
+<div class="container my-5 radiant-bg" id="our-story">
   <div class="row">
     <div class="col-lg-8 mx-auto">
-      <h2 class="text-center mb-4">Our Story</h2>
+      <h2 class="text-center mb-4 section-title">Our Story</h2>
       <p>The Ultimate Fighting Championship (UFC) is the world's premier mixed martial arts organization and the largest Pay-Per-View event provider in the world. UFC follows a rich history and tradition of competitive MMA dating back to the Olympic Games in Athens. About 2,000 years ago, the Greeks introduced the combat sport of Pankration, a fierce competition combining the striking skills of boxing with the grappling techniques of wrestling.</p>
       
       <p>The UFC was founded in 1993 as a professional mixed martial arts organization that has revolutionized the fight business. With more than 700 million fans worldwide, UFC has produced over 500 events in 28 countries since its inception. UFC boasts the highest-level fighters on the planet and has popularized the sport globally through its powerful brand, world-class events, and unmatched programming.</p>
@@ -27,10 +30,12 @@
 
   <div class="row mt-5">
     <div class="col-md-6">
-      <img src="{% static 'images/placeholder.jpg' %}" class="img-fluid rounded" alt="UFC Event">
+      <div class="octagon-border">
+        <img src="{% static 'img/ufc_300.jpg' %}" class="img-fluid rounded" alt="UFC Event">
+      </div>
     </div>
     <div class="col-md-6">
-      <h3>The Evolution of UFC</h3>
+      <h3 class="section-title">The Evolution of UFC</h3>
       <p>When the UFC began in 1993, it was designed as a single-night tournament to determine the most effective martial art for unarmed combat situations. It featured minimal rules and fighters competing in different disciplines. Since then, the UFC has embraced numerous rule changes to create a more controlled and safer environment for its athletes while maintaining the integrity of competition.</p>
       
       <p>Today, the UFC sets the gold standard for MMA events worldwide with a comprehensive set of unified rules and rigorous health and safety standards. The organization continues to evolve, constantly improving the sport and expanding its global footprint.</p>
@@ -38,29 +43,29 @@
   </div>
 </div>
 
-<!-- Mission & Values Section -->
-<div class="bg-light py-5">
+<!-- Mission & Values Section with Card Animations -->
+<div class="champions-section py-5">
   <div class="container">
-    <h2 class="text-center mb-4">Our Mission & Values</h2>
+    <h2 class="text-center mb-4 section-title">Our Mission & Values</h2>
     <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
+      <div class="col-md-4 mb-4 fighter-item">
+        <div class="card h-100 animate-fighter">
           <div class="card-body text-center">
             <h4 class="card-title">Excellence</h4>
             <p class="card-text">We strive to showcase the highest level of martial arts skill and athletic performance in every event. Our commitment to excellence extends from our fighters to our production quality and fan experience.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
+      <div class="col-md-4 mb-4 fighter-item">
+        <div class="card h-100 animate-fighter">
           <div class="card-body text-center">
             <h4 class="card-title">Integrity</h4>
             <p class="card-text">We uphold the highest standards of sportsmanship and fair play. Our commitment to strict drug testing, transparent rankings, and consistent rule enforcement ensures the legitimacy of our sport.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
+      <div class="col-md-4 mb-4 fighter-item">
+        <div class="card h-100 animate-fighter">
           <div class="card-body text-center">
             <h4 class="card-title">Innovation</h4>
             <p class="card-text">We continuously push boundaries to improve the sport, athlete safety, and viewer experience. From production technology to training methodologies, we embrace innovation at every level.</p>
@@ -71,13 +76,13 @@
   </div>
 </div>
 
-<!-- Leadership Section -->
-<div class="container my-5">
-  <h2 class="text-center mb-4">UFC Leadership</h2>
+<!-- Leadership Section with Card Effects -->
+<div class="container my-5 leadership">
+  <h2 class="text-center mb-4 section-title">UFC Leadership</h2>
   <div class="row">
     <div class="col-md-4 mb-4">
-      <div class="card">
-        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Dana White">
+      <div class="card punch-effect">
+        <img src="{% static 'img/dana_white.jpg' %}" class="card-img-top" alt="Dana White">
         <div class="card-body text-center">
           <h5 class="card-title">Dana White</h5>
           <p class="card-text text-muted">UFC President</p>
@@ -86,8 +91,8 @@
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card">
-        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Lawrence Epstein">
+      <div class="card punch-effect">
+        <img src="{% static 'img/lawrence.jpg' %}" class="card-img-top" alt="Lawrence Epstein">
         <div class="card-body text-center">
           <h5 class="card-title">Lawrence Epstein</h5>
           <p class="card-text text-muted">Chief Operating Officer</p>
@@ -96,8 +101,8 @@
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card">
-        <img src="{% static 'images/placeholder.jpg' %}" class="card-img-top" alt="Hunter Campbell">
+      <div class="card punch-effect">
+        <img src="{% static 'img/hunter.jpg' %}" class="card-img-top" alt="Hunter Campbell">
         <div class="card-body text-center">
           <h5 class="card-title">Hunter Campbell</h5>
           <p class="card-text text-muted">Chief Business Officer</p>
@@ -108,36 +113,36 @@
   </div>
 </div>
 
-<!-- UFC by the Numbers -->
-<div class="bg-dark text-white py-5">
+<!-- UFC by the Numbers with Enhanced Styling -->
+<div class="bg-dark text-white py-5 cta-section">
   <div class="container">
-    <h2 class="text-center mb-5">UFC By The Numbers</h2>
+    <h2 class="text-center mb-5 section-title">UFC By The Numbers</h2>
     <div class="row text-center">
       <div class="col-md-3 mb-4">
-        <h3 class="display-4 fw-bold">700M+</h3>
+        <h3 class="display-4 fw-bold impact-flash">700M+</h3>
         <p>Fans Worldwide</p>
       </div>
       <div class="col-md-3 mb-4">
-        <h3 class="display-4 fw-bold">175+</h3>
+        <h3 class="display-4 fw-bold impact-flash">175+</h3>
         <p>Countries Where UFC is Broadcast</p>
       </div>
       <div class="col-md-3 mb-4">
-        <h3 class="display-4 fw-bold">500+</h3>
+        <h3 class="display-4 fw-bold impact-flash">500+</h3>
         <p>Events Since 1993</p>
       </div>
       <div class="col-md-3 mb-4">
-        <h3 class="display-4 fw-bold">28</h3>
+        <h3 class="display-4 fw-bold impact-flash">28</h3>
         <p>Countries Hosted UFC Events</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- UFC Performance Institute -->
-<div class="container my-5">
+<!-- UFC Performance Institute with Enhanced Styling -->
+<div class="container my-5 radiant-bg">
   <div class="row">
     <div class="col-lg-8 mx-auto">
-      <h2 class="text-center mb-4">UFC Performance Institute</h2>
+      <h2 class="text-center mb-4 section-title">UFC Performance Institute</h2>
       <p>The UFC Performance Institute represents the world's first mixed martial arts multi-disciplinary research, innovation, and performance center. With locations in Las Vegas and Shanghai, these state-of-the-art facilities provide UFC athletes with unparalleled training, recovery, nutrition, and performance services.</p>
       
       <p>The Performance Institute employs an expert staff of sports scientists, nutritionists, and strength and conditioning coaches who work directly with athletes to maximize their potential and optimize their overall health and wellness. This investment in athlete development demonstrates the UFC's commitment to the advancement of MMA as a professional sport.</p>
@@ -149,16 +154,32 @@
   </div>
 </div>
 
-<!-- Community Initiatives -->
-<div class="bg-light py-5">
+<!-- Community Initiatives with Enhanced Cards -->
+<div class="champions-section py-5">
   <div class="container">
-    <h2 class="text-center mb-4">Community & Social Responsibility</h2>
+    <h2 class="text-center mb-4 section-title">Community & Social Responsibility</h2>
     <div class="row">
       <div class="col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
             <h4 class="card-title">UFC Foundation</h4>
             <p class="card-text">The UFC Foundation supports charitable initiatives in the communities where we live and work. We focus on youth development, education, and public health initiatives, providing support to disadvantaged communities around the world.</p>
+            
+            <!-- Fighter Stats Styling for Key Metrics -->
+            <div class="fighter-stats mt-4">
+              <div>
+                <strong>$2M+</strong>
+                <span>Annual Donations</span>
+              </div>
+              <div>
+                <strong>50+</strong>
+                <span>Partner Organizations</span>
+              </div>
+              <div>
+                <strong>10K+</strong>
+                <span>Lives Impacted</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -167,6 +188,22 @@
           <div class="card-body">
             <h4 class="card-title">Veteran Outreach</h4>
             <p class="card-text">The UFC is proud to support military veterans through employment opportunities, event access, and dedicated programs. Our partnership with military organizations helps veterans transition to civilian life and provides therapeutic outlets through martial arts.</p>
+            
+            <!-- Fighter Stats Styling for Key Metrics -->
+            <div class="fighter-stats mt-4">
+              <div>
+                <strong>5K+</strong>
+                <span>Veterans Supported</span>
+              </div>
+              <div>
+                <strong>100+</strong>
+                <span>Veterans Employed</span>
+              </div>
+              <div>
+                <strong>15+</strong>
+                <span>Military Partners</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -174,10 +211,140 @@
   </div>
 </div>
 
-<!-- Call to Action -->
-<div class="bg-dark text-white p-5 text-center rounded">
-  <h2>Join the UFC Community</h2>
-  <p class="lead">Get exclusive content, event updates, and connect with UFC fans around the world.</p>
-  <a href="#" class="btn btn-danger btn-lg mt-3">Sign Up Now</a>
+<!-- Interactive Stats Display -->
+<div class="container my-5">
+  <h2 class="text-center mb-4 section-title">Fighter Development</h2>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h4>Training Facilities</h4>
+      <div class="heat-stat-label">
+        <span>UFC Performance Institute</span>
+        <span>95%</span>
+      </div>
+      <div class="heat-stat">
+        <div class="heat-stat-fill" style="width: 95%"></div>
+      </div>
+      
+      <div class="heat-stat-label">
+        <span>Affiliate Gyms</span>
+        <span>85%</span>
+      </div>
+      <div class="heat-stat">
+        <div class="heat-stat-fill" style="width: 85%"></div>
+      </div>
+      
+      <div class="heat-stat-label">
+        <span>International Centers</span>
+        <span>70%</span>
+      </div>
+      <div class="heat-stat">
+        <div class="heat-stat-fill" style="width: 70%"></div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <h4>Athlete Support</h4>
+      <div class="heat-stat-label">
+        <span>Sports Science</span>
+        <span>90%</span>
+      </div>
+      <div class="heat-stat">
+        <div class="heat-stat-fill" style="width: 90%"></div>
+      </div>
+      
+      <div class="heat-stat-label">
+        <span>Nutrition Programs</span>
+        <span>85%</span>
+      </div>
+      <div class="heat-stat">
+        <div class="heat-stat-fill" style="width: 85%"></div>
+      </div>
+      
+      <div class="heat-stat-label">
+        <span>Recovery Methods</span>
+        <span>80%</span>
+      </div>
+      <div class="heat-stat">
+        <div class="heat-stat-fill" style="width: 80%"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Upcoming Events Teaser with Enhanced Animation -->
+<div class="upcoming-events py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4 section-title">Upcoming UFC Events</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'img/ufc_300.jpg' %}" class="card-img-top" alt="UFC Event">
+          <div class="card-body">
+            <h5 class="card-title">UFC 300</h5>
+            <p class="card-text">The milestone event featuring championship bouts and the biggest names in MMA.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">April 13, 2024</small>
+              <span class="weight-class">Pay Per View</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'img/fight_night.jpg' %}" class="card-img-top" alt="UFC Event">
+          <div class="card-body">
+            <h5 class="card-title">UFC Fight Night</h5>
+            <p class="card-text">An action-packed night featuring rising stars and established veterans.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">April 27, 2024</small>
+              <span class="weight-class">ESPN+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'img/ufc_espn.jpg' %}" class="card-img-top" alt="UFC Event">
+          <div class="card-body">
+            <h5 class="card-title">UFC on ESPN</h5>
+            <p class="card-text">Top-ranked contenders battle for a shot at championship glory.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">May 11, 2024</small>
+              <span class="weight-class">ESPN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action with Enhanced Styling -->
+<div class="cta-section text-white p-5 text-center">
+  <div class="container">
+    <h2 class="knockout-text">Join the UFC Community</h2>
+    <p class="lead">Get exclusive content, event updates, and connect with UFC fans around the world.</p>
+    <a href="#" class="btn btn-danger btn-lg mt-3">Sign Up Now</a>
+    
+    <!-- Countdown Timer -->
+    <div class="countdown-timer mt-5">
+      <div class="countdown-item">
+        <div class="countdown-number">15</div>
+        <div class="countdown-label">days</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number">07</div>
+        <div class="countdown-label">hours</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number">22</div>
+        <div class="countdown-label">mins</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number">35</div>
+        <div class="countdown-label">secs</div>
+      </div>
+    </div>
+    <p class="mt-3">Until the next UFC Pay-Per-View event</p>
+  </div>
 </div>
 {% endblock content %}
